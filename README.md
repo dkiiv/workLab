@@ -30,14 +30,14 @@ reading the repo, not by being re-taught.
 
 ## Getting started (human)
 
-1. Create a **private** GitHub repo (work org or personal — but treat every byte
-   as work-confidential; assume it could be audited).
-2. `git init -b main .` here, add the remote, and set the guard's remote:
-   edit `REMOTE_DEFAULT` in `files/hermes-skills-git/work_skills_guard.py` (and
-   `ID_NAME`/`ID_EMAIL` to the work commit identity you want — never a personal
-   email).
-3. Push, then paste the block in `hermes-skills/README.md` §"Setting up another
-   Hermes agent" to the new agent.
+This clone's remote is the **staging** repo `dkiiv/workLab`. Plan: clone it on the
+work machine, push it to the work private repo, then:
+1. Point `origin` there (`git remote set-url origin <work-remote>`) and update
+   `REMOTE_DEFAULT` in `files/hermes-skills-git/work_skills_guard.py`.
+2. Set `ID_NAME`/`ID_EMAIL` to the work commit identity if different — never a
+   personal email.
+3. Delete/lock the staging repo once the work copy is live, so only one canonical
+   remote exists.
 
 ## Docs
 

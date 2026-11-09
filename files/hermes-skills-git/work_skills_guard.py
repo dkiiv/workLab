@@ -37,7 +37,7 @@ from pathlib import Path
 REPO_DEFAULT = "~/Git/work/workLab"
 SKILLS_SUB = "hermes-skills"
 SCAN_SUBS = ("hermes-skills", "docs", "files", "README.md")
-REMOTE_DEFAULT = "SET-ME"
+REMOTE_DEFAULT = "git@github.com:dkiiv/workLab.git"
 ID_NAME = "work-agent"
 ID_EMAIL = "work-agent@users.noreply.github.com"
 LOG_RELPATH = ".hermes/logs/work-guard.log"

@@ -15,7 +15,7 @@ Edit the constants at the top of `work_skills_guard.py`:
 | Constant | Set to |
 |---|---|
 | `REPO_DEFAULT` | canonical clone path (default `~/Git/work/workLab` — keep if you use it) |
-| `REMOTE_DEFAULT` | the **private** GitHub URL of this repo (currently the `SET-ME` placeholder) |
+| `REMOTE_DEFAULT` | the remote this clone pushes to — currently set to the `dkiiv/workLab` staging repo; change to the work private repo when you migrate |
 | `ID_NAME` / `ID_EMAIL` | the work commit identity (currently `work-agent@users.noreply.github.com` placeholder — never a personal email) |
 
 ## What runs where
