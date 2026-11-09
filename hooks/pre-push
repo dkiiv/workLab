@@ -1,0 +1,5 @@
+#!/bin/sh
+# work-skills-guard: scan the commits about to be pushed for secret-shaped text.
+# Bypass deliberately: git push --no-verify
+here=$(cd "$(dirname "$0")" && pwd)
+exec python3 "$here/../files/hermes-skills-git/work_skills_guard.py" git-pre-push

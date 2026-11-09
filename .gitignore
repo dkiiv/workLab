@@ -1,0 +1,8 @@
+# Local secret/config drop-ins: kept on disk, never committed.
+# If a tracked example is wanted, name it *.env.example or `git add -f` deliberately.
+.env
+*.env
+.env.*
+__pycache__/
+*.pyc
+.pre-symlink-*/

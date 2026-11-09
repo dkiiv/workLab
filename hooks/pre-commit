@@ -1,0 +1,5 @@
+#!/bin/sh
+# work-skills-guard: block a commit whose staged lines contain secret-shaped text.
+# Bypass deliberately: git commit --no-verify
+here=$(cd "$(dirname "$0")" && pwd)
+exec python3 "$here/../files/hermes-skills-git/work_skills_guard.py" git-pre-commit
